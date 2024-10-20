@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://niswet.onrender.com/api/auth/register",
+      "https://niswet-1.onrender.com/api/auth/register",
       formData,
       {
         withCredentials: true,
