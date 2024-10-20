@@ -5,12 +5,13 @@ const initialState = {
   isLoading: false,
   productList: [],
 };
-
+``
 export const addNewProduct = createAsyncThunk(
   "/products/addnewproduct",
   async (formData) => {
+    console.log(formData);
     const result = await axios.post(
-      "http://localhost:5000/api/admin/products/add",
+      "http://localhost:5000/api/admin/products/adaud",
       formData,
       {
         headers: {
