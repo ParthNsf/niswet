@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://niswet.onrender.com/api/auth/login",
+      "https://niswet-1.onrender.com/api/auth/login",
       formData,
       {
         withCredentials: true,
